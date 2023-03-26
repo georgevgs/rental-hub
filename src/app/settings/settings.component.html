@@ -1,0 +1,14 @@
+<h1>Settings</h1>
+
+<form [formGroup]="settingsForm" (ngSubmit)="saveSettings()">
+    <div class="form-group">
+        <label for="apiKey">API Key</label>
+        <input type="text" class="form-control" id="apiKey" formControlName="apiKey">
+    </div>
+    <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" class="form-control" id="fullName" formControlName="fullName">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Save Settings</button>
+</form>
